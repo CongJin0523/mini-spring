@@ -1,0 +1,13 @@
+package com.cong.beans.factory.support;
+
+import com.cong.beans.factory.BeanFactory;
+
+import java.util.Map;
+
+public interface ListableBeanFactory extends BeanFactory {
+  boolean containsBeanDefinition(String beanName);
+  int getBeanDefinitionCount();
+  String[] getBeanDefinitionNames();
+  String[] getBeanNamesForType(Class<?> type);
+  <T> Map<String, T> getBeansOfType(Class<T> type);
+}
