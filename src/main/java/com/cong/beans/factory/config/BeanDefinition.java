@@ -6,6 +6,7 @@ public interface BeanDefinition {
 
   Class<?> getBeanClass();
   String getScope();
+  void setScope(String scope);
   boolean isSingleton();
   boolean isPrototype();
   String getInitMethodName();
