@@ -3,6 +3,7 @@ package com.cong.beans.factory.support;
 import com.cong.beans.exception.BeansException;
 import com.cong.beans.factory.config.BeanDefinition;
 import com.cong.beans.factory.config.BeanDefinitionHolder;
+import com.cong.beans.factory.config.ConstructorArgumentValue;
 import com.cong.beans.factory.config.PropertyValue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CircularDependencyTest {
+
   private DefaultListableBeanFactory beanFactory;
 
   @BeforeEach
@@ -28,14 +30,12 @@ public class CircularDependencyTest {
     beanFactory.registerBeanDefinition("circularB", beanDefinitionB);
 
     // 设置CircularA依赖CircularB
-    BeanDefinitionHolder holderA = beanFactory.getBeanDefinitionHolder("circularA");
-    holderA.addPropertyValue(
+    beanDefinitionA.addPropertyValue(
       new PropertyValue("circularB", "circularB", CircularB.class)
     );
 
     // 设置CircularB依赖CircularA
-    BeanDefinitionHolder holderB = beanFactory.getBeanDefinitionHolder("circularB");
-    holderB.addPropertyValue(
+    beanDefinitionB.addPropertyValue(
       new PropertyValue("circularA", "circularA", CircularA.class)
     );
 
@@ -60,6 +60,14 @@ public class CircularDependencyTest {
     beanFactory.registerBeanDefinition("circularD", beanDefinitionD);
 
     // 设置构造器依赖
+    beanDefinitionC.addConstructorArgumentValue(
+      new ConstructorArgumentValue("circularD", CircularD.class)
+    );
+    beanDefinitionD.addConstructorArgumentValue(
+      new ConstructorArgumentValue("circularC", CircularC.class)
+    );
+
+    // 验证循环依赖异常
     assertThrows(BeansException.class, () -> {
       beanFactory.getBean("circularC");
     });

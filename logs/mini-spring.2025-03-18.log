@@ -1,0 +1,38 @@
+2025-03-18 21:16:28.258 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:16:28.276 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:16:28.282 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:16:45.555 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:16:45.578 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:16:45.589 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:16:59.834 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:16:59.854 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:16:59.861 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:14.941 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:14.960 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:17:14.967 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:26.277 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:26.292 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:17:26.296 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:30.639 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:30.652 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:17:30.658 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:17:38.766 [main] DEBUG com.cong.core.io.FileSystemResource - Opened InputStream for file [/var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit17009767087857947196/test.txt]
+2025-03-18 21:17:43.111 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit5335551921287760896/test.txt
+2025-03-18 21:17:43.236 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit8499157891699670379/test.txt
+2025-03-18 21:17:43.356 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit8692570864000776956/test.txt
+2025-03-18 21:17:43.471 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit12103718470433660934/test.txt
+2025-03-18 21:17:43.588 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit15552518257952088670/test.txt
+2025-03-18 21:17:43.591 [main] DEBUG com.cong.core.io.UrlResource - Failed to check existence of file:/var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit10932095146778126684/non-existing.txt: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit10932095146778126684/non-existing.txt (No such file or directory)
+2025-03-18 21:17:43.708 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit10932095146778126684/test.txt
+2025-03-18 21:17:43.826 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit7615739936989835708/test.txt
+2025-03-18 21:17:43.943 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit4387794020963889616/test.txt
+2025-03-18 21:17:44.090 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit3250621744410733447/test.txt
+2025-03-18 21:17:44.101 [main] DEBUG com.cong.core.io.UrlResourceTest - Tracking new resource: java.io.BufferedInputStream@491b9b8
+2025-03-18 21:17:44.101 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully closed resource: java.io.BufferedInputStream@491b9b8
+2025-03-18 21:17:44.219 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit120302039567991977/test.txt
+2025-03-18 21:38:28.262 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:38:28.275 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:38:28.280 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:39:00.756 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-18 21:39:00.774 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-18 21:39:00.779 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]

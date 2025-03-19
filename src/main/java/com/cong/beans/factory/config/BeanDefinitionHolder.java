@@ -10,38 +10,27 @@ import java.util.List;
 public class BeanDefinitionHolder {
   private final BeanDefinition beanDefinition;
   private final String beanName;
-  private final List<ConstructorArgumentValue> constructorArgumentValues;
-  private final List<PropertyValue> propertyValues;
+  private final String[] aliases;
 
   public BeanDefinitionHolder(BeanDefinition beanDefinition, String beanName) {
+    this(beanDefinition, beanName, null);
+  }
+
+  public BeanDefinitionHolder(BeanDefinition beanDefinition, String beanName, String[] aliases) {
     this.beanDefinition = beanDefinition;
     this.beanName = beanName;
-    this.constructorArgumentValues = new ArrayList<>();
-    this.propertyValues = new ArrayList<>();
+    this.aliases = aliases;
   }
 
   public BeanDefinition getBeanDefinition() {
-    return this.beanDefinition;
+    return beanDefinition;
   }
 
   public String getBeanName() {
-    return this.beanName;
+    return beanName;
   }
 
-  public void addConstructorArgumentValue(ConstructorArgumentValue argumentValue) {
-    this.constructorArgumentValues.add(argumentValue);
-  }
-
-  public List<ConstructorArgumentValue> getConstructorArgumentValues() {
-    return new ArrayList<>(this.constructorArgumentValues);
-  }
-
-  public void addPropertyValue(PropertyValue propertyValue) {
-    this.propertyValues.add(propertyValue);
-  }
-
-
-  public List<PropertyValue> getPropertyValues() {
-    return new ArrayList<>(this.propertyValues);
+  public String[] getAliases() {
+    return aliases;
   }
 }

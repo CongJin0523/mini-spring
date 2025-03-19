@@ -1,32 +1,36 @@
-2025-03-18 21:16:28.258 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:16:28.276 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
-2025-03-18 21:16:28.282 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:16:45.555 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:16:45.578 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
-2025-03-18 21:16:45.589 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:16:59.834 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:16:59.854 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
-2025-03-18 21:16:59.861 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:14.941 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:14.960 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
-2025-03-18 21:17:14.967 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:26.277 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:26.292 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
-2025-03-18 21:17:26.296 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:30.639 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:30.652 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
-2025-03-18 21:17:30.658 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
-2025-03-18 21:17:38.766 [main] DEBUG com.cong.core.io.FileSystemResource - Opened InputStream for file [/var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit17009767087857947196/test.txt]
-2025-03-18 21:17:43.111 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit5335551921287760896/test.txt
-2025-03-18 21:17:43.236 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit8499157891699670379/test.txt
-2025-03-18 21:17:43.356 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit8692570864000776956/test.txt
-2025-03-18 21:17:43.471 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit12103718470433660934/test.txt
-2025-03-18 21:17:43.588 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit15552518257952088670/test.txt
-2025-03-18 21:17:43.591 [main] DEBUG com.cong.core.io.UrlResource - Failed to check existence of file:/var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit10932095146778126684/non-existing.txt: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit10932095146778126684/non-existing.txt (No such file or directory)
-2025-03-18 21:17:43.708 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit10932095146778126684/test.txt
-2025-03-18 21:17:43.826 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit7615739936989835708/test.txt
-2025-03-18 21:17:43.943 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit4387794020963889616/test.txt
-2025-03-18 21:17:44.090 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit3250621744410733447/test.txt
-2025-03-18 21:17:44.101 [main] DEBUG com.cong.core.io.UrlResourceTest - Tracking new resource: java.io.BufferedInputStream@491b9b8
-2025-03-18 21:17:44.101 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully closed resource: java.io.BufferedInputStream@491b9b8
-2025-03-18 21:17:44.219 [main] DEBUG com.cong.core.io.UrlResourceTest - Successfully deleted test file: /var/folders/7c/bp2m23_x14jf4ygn7lw09xm40000gn/T/junit120302039567991977/test.txt
+2025-03-19 18:03:06.113 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularC'
+2025-03-19 18:03:06.116 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularD'
+2025-03-19 18:03:06.126 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularA'
+2025-03-19 18:03:06.126 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularB'
+2025-03-19 18:04:42.984 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularC'
+2025-03-19 18:04:42.989 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularD'
+2025-03-19 18:04:42.999 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularA'
+2025-03-19 18:04:43.000 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'circularB'
+2025-03-19 18:04:48.725 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'simpleService'
+2025-03-19 18:04:48.730 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'simpleController'
+2025-03-19 18:04:55.028 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'lifecycleBean'
+2025-03-19 18:04:55.037 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Invoked destroy method 'destroy' on bean 'lifecycleBean'
+2025-03-19 18:04:55.037 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Destroyed singleton bean 'lifecycleBean'
+2025-03-19 18:04:55.045 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'testBean'
+2025-03-19 18:04:55.046 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'testBean'
+2025-03-19 18:04:55.046 [main] DEBUG c.c.b.f.support.SimpleAliasRegistry - Registered alias 'alias' for name 'testBean'
+2025-03-19 18:04:55.046 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered alias 'alias' for bean 'testBean'
+2025-03-19 18:04:55.046 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'anotherBean'
+2025-03-19 18:04:55.048 [main] DEBUG c.c.b.f.support.SimpleAliasRegistry - Registered alias 'alias1' for name 'testBean'
+2025-03-19 18:04:55.048 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered alias 'alias1' for bean 'testBean'
+2025-03-19 18:04:55.048 [main] DEBUG c.c.b.f.support.SimpleAliasRegistry - Registered alias 'alias2' for name 'alias1'
+2025-03-19 18:04:55.048 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered alias 'alias2' for bean 'alias1'
+2025-03-19 18:04:55.051 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'testBean'
+2025-03-19 18:04:55.053 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'testBean'
+2025-03-19 18:04:55.054 [main] DEBUG c.c.b.f.support.SimpleAliasRegistry - Registered alias 'testBean1' for name 'testBean'
+2025-03-19 18:04:55.054 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered alias 'testBean1' for bean 'testBean'
+2025-03-19 18:04:55.054 [main] DEBUG c.c.b.f.support.SimpleAliasRegistry - Registered alias 'testBean2' for name 'testBean'
+2025-03-19 18:04:55.054 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered alias 'testBean2' for bean 'testBean'
+2025-03-19 18:04:55.054 [main] DEBUG c.c.b.f.support.SimpleAliasRegistry - Removed alias 'testBean1' for name 'testBean'
+2025-03-19 18:04:55.055 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Removed alias 'testBean1' from bean factory
+2025-03-19 18:04:59.297 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'simpleService'
+2025-03-19 18:04:59.302 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'simpleController'
+2025-03-19 18:04:59.310 [main] DEBUG c.c.b.f.s.DefaultListableBeanFactory - Registered bean definition for bean named 'simpleController'
+2025-03-19 18:05:06.503 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]
+2025-03-19 18:05:06.516 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [com.cong.core.io.ClassPathResourceTest/test.txt]
+2025-03-19 18:05:06.521 [main] DEBUG com.cong.core.io.ClassPathResource - Opened InputStream for class path resource [test.txt]

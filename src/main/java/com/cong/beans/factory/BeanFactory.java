@@ -47,4 +47,12 @@ public interface BeanFactory {
    * @return
    */
   boolean isPrototype(String name);
+
+  /**
+   * get bean type
+   * @param name
+   * @return bean's type or null if it's not exists
+   * @throws BeansException
+   */
+  Class<?> getType(String name) throws BeansException;
 }

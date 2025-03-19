@@ -1,6 +1,12 @@
 package com.cong.beans.factory.support;
 
+import com.cong.beans.factory.PropertyValues;
 import com.cong.beans.factory.config.BeanDefinition;
+import com.cong.beans.factory.config.ConstructorArgumentValue;
+import com.cong.beans.factory.config.PropertyValue;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GenericBeanDefinition implements BeanDefinition {
 
@@ -8,9 +14,14 @@ public class GenericBeanDefinition implements BeanDefinition {
   private String scope = SCOPE_SINGLETON;
   private String initMethodName;
   private String destroyMethodName;
+  private PropertyValues propertyValues;
+  private final List<ConstructorArgumentValue> constructorArgumentValues = new ArrayList<>();
+
+
 
   public GenericBeanDefinition(Class<?> beanClass) {
     this.beanClass = beanClass;
+    this.propertyValues = new PropertyValues();
   }
 
   @Override
@@ -56,5 +67,34 @@ public class GenericBeanDefinition implements BeanDefinition {
   @Override
   public void setDestroyMethodName(String destroyMethodName) {
     this.destroyMethodName = destroyMethodName;
+  }
+  @Override
+  public PropertyValues getPropertyValues() {
+    return this.propertyValues;
+  }
+
+  @Override
+  public void setPropertyValues(PropertyValues propertyValues) {
+    this.propertyValues = propertyValues;
+  }
+
+  @Override
+  public void addPropertyValue(PropertyValue propertyValue) {
+    this.propertyValues.addPropertyValue(propertyValue);
+  }
+
+  @Override
+  public List<ConstructorArgumentValue> getConstructorArgumentValues() {
+    return this.constructorArgumentValues;
+  }
+
+  @Override
+  public void addConstructorArgumentValue(ConstructorArgumentValue constructorArgumentValue) {
+    this.constructorArgumentValues.add(constructorArgumentValue);
+  }
+
+  @Override
+  public boolean hasConstructorArgumentValues() {
+    return !this.constructorArgumentValues.isEmpty();
   }
 }

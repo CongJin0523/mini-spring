@@ -9,6 +9,14 @@ public class ConstructorArgumentValue {
   private final String name;
 
 
+  public ConstructorArgumentValue(Object value) {
+    this(value, null, null);
+  }
+
+  public ConstructorArgumentValue(Object value, Class<?> type) {
+    this(value, type, null);
+  }
+
   public ConstructorArgumentValue(Object value, Class<?> type, String name) {
     this.value = value;
     this.type = type;
