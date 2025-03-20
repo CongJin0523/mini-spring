@@ -1,4 +1,4 @@
-package util;
+package com.cong.util;
 
 public class ClassUtils {
 
