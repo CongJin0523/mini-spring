@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 public class UTF8ResourceBundle {
   public static ResourceBundle getBundle(String baseName, Locale locale) {
     try {
-      String bundleName = baseName + "_" + locale.getLanguage() + ".properties";
+      String bundleName = baseName + "_" + locale.getLanguage() + ".txt";
       return new PropertyResourceBundle(
         new InputStreamReader(
           Objects.requireNonNull(UTF8ResourceBundle.class.getClassLoader().getResourceAsStream(bundleName)),
