@@ -1,6 +1,7 @@
 package com.cong.beans.factory.config;
 
 import com.cong.beans.exception.BeansException;
+import com.cong.beans.factory.AutowireCapableBeanFactory;
 import com.cong.beans.factory.ListableBeanFactory;
 
 /**

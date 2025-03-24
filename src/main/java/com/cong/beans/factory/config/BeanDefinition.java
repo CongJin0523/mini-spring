@@ -1,16 +1,20 @@
 package com.cong.beans.factory.config;
 
-import com.cong.beans.factory.PropertyValues;
-
 import java.util.List;
 
 public interface BeanDefinition {
   String SCOPE_SINGLETON = "singleton";
   String SCOPE_PROTOTYPE = "prototype";
 
+  void setBeanClass(Class<?> beanClass);
   Class<?> getBeanClass();
+  String getBeanClassName();
   String getScope();
   void setScope(String scope);
+  // lazyInit
+  void setLazyInit(boolean lazyInit);
+  boolean isLazyInit();
+
   boolean isSingleton();
   boolean isPrototype();
   //init

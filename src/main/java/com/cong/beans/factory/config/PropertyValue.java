@@ -17,6 +17,10 @@ public class PropertyValue {
     this.type = type;
   }
 
+  public PropertyValue(String name, Object value) {
+    this(name, value, value != null ? value.getClass() : Object.class);
+  }
+
   public String getName() {
     return name;
   }

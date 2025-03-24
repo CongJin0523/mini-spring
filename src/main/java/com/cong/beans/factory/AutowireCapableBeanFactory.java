@@ -1,7 +1,7 @@
-package com.cong.beans.factory.config;
+package com.cong.beans.factory;
 
 import com.cong.beans.exception.BeansException;
-import com.cong.beans.factory.BeanFactory;
+import com.cong.beans.factory.config.ConfigurableBeanFactory;
 
 /**
  *

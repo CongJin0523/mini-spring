@@ -1,8 +1,13 @@
 package com.cong.util;
 
 public class ClassUtils {
+  /** 数组类名后缀 */
+  public static final String ARRAY_SUFFIX = "[]";
+  /** 内部类分隔符 */
+  private static final String INNER_CLASS_SEPARATOR = "$";
+  /** 包分隔符 */
+  private static final String PACKAGE_SEPARATOR = ".";
 
-  private static final ClassLoader[] EMPTY_CLASS_LOADER_ARRAY = new ClassLoader[0];
 
   /**
    * firstly use current thread contextClassloader, 2nd use current class classloader, 3rd use system classloader
@@ -50,22 +55,29 @@ public class ClassUtils {
     int lastDotIndex = fqClassName.lastIndexOf('.');
     return (lastDotIndex != -1 ? fqClassName.substring(0, lastDotIndex) : "");
   }
-
   /**
-   * is innerClass?
-   * @param clazz
-   * @return
+   * 获取类的短名称
+   *
+   * @param className 类名
+   * @return 短名称
    */
-  public static boolean isInnerClass(Class<?> clazz) {
-    return (clazz != null && clazz.isMemberClass() && !isStaticClass(clazz));
+  public static String getShortName(String className) {
+    int lastDotIndex = className.lastIndexOf(PACKAGE_SEPARATOR);
+    int nameEndIndex = className.indexOf(ARRAY_SUFFIX);
+    if (nameEndIndex == -1) {
+      nameEndIndex = className.length();
+    }
+    String shortName = className.substring(lastDotIndex + 1, nameEndIndex);
+    shortName = shortName.replace(INNER_CLASS_SEPARATOR, PACKAGE_SEPARATOR);
+    return shortName;
   }
-
   /**
-   * is static class
-   * @param clazz
-   * @return
+   * 判断是否是内部类
+   *
+   * @param className 类名
+   * @return 如果是内部类返回true，否则返回false
    */
-  public static boolean isStaticClass(Class<?> clazz) {
-    return (clazz != null && clazz.getModifiers() == java.lang.reflect.Modifier.STATIC);
+  public static boolean isInnerClass(String className) {
+    return className.contains(INNER_CLASS_SEPARATOR);
   }
 }

@@ -2,7 +2,6 @@ package com.cong.beans.factory.support;
 
 import com.cong.beans.exception.BeansException;
 import com.cong.beans.factory.ObjectFactory;
-import com.cong.beans.factory.config.AutowireCapableBeanFactory;
 import com.cong.beans.factory.config.BeanDefinition;
 import com.cong.beans.factory.config.BeanPostProcessor;
 import com.cong.beans.factory.config.ConfigurableBeanFactory;

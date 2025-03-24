@@ -1,6 +1,6 @@
 package com.cong.beans.factory.support;
 
-import com.cong.beans.factory.PropertyValues;
+import com.cong.beans.factory.config.PropertyValues;
 import com.cong.beans.factory.config.BeanDefinition;
 import com.cong.beans.factory.config.ConstructorArgumentValue;
 import com.cong.beans.factory.config.PropertyValue;
@@ -12,6 +12,7 @@ public class GenericBeanDefinition implements BeanDefinition {
 
   private Class<?> beanClass;
   private String scope = SCOPE_SINGLETON;
+  private boolean lazyInit = false;
   private String initMethodName;
   private String destroyMethodName;
   private PropertyValues propertyValues;
@@ -21,13 +22,31 @@ public class GenericBeanDefinition implements BeanDefinition {
 
   public GenericBeanDefinition(Class<?> beanClass) {
     this.beanClass = beanClass;
-    this.propertyValues = new PropertyValues();
+
   }
+  public GenericBeanDefinition() {
+  }
+
+
+
+
+  @Override
+  public void setBeanClass(Class<?> beanClass) {
+    this.beanClass = beanClass;
+  }
+
 
   @Override
   public Class<?> getBeanClass() {
     return this.beanClass;
   }
+
+  @Override
+  public String getBeanClassName() {
+    return this.beanClass != null ? this.beanClass.getName() : null;
+  }
+
+
 
   @Override
   public String getScope() {
@@ -37,6 +56,16 @@ public class GenericBeanDefinition implements BeanDefinition {
   @Override
   public void setScope(String scope) {
     this.scope = scope;
+  }
+
+  @Override
+  public void setLazyInit(boolean lazyInit) {
+    this.lazyInit = lazyInit;
+  }
+
+  @Override
+  public boolean isLazyInit() {
+    return this.lazyInit;
   }
 
   @Override
@@ -80,6 +109,9 @@ public class GenericBeanDefinition implements BeanDefinition {
 
   @Override
   public void addPropertyValue(PropertyValue propertyValue) {
+    if (this.propertyValues == null) {
+      this.propertyValues = new PropertyValues();
+    }
     this.propertyValues.addPropertyValue(propertyValue);
   }
 
